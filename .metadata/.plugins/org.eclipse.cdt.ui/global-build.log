@@ -1,0 +1,5 @@
+11:46:10 **** Clean-only build of configuration Debug for project 103RB ****
+rm -rf Src/main.d Src/My103.o 103RB Src/My103.d Src/Lib/system_stm32f1xx.d 103RB.elf Src/Lib/system_stm32f1xx.o Src/main.o Src/Lib/Startup/startup_stm32f103xb.o 
+
+11:46:11 Build Finished (took 141ms)
+

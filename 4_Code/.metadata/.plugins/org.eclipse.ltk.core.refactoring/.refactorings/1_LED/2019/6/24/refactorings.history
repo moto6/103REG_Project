@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="자원 &apos;1_LED/Src/BSP/hw.h&apos;을(를) &apos;bsp.h&apos;(으)로 이름 바꾸기" description="&apos;hw.h&apos; 자원 이름 바꾸기" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/BSP/hw.h" name="bsp.h" stamp="1560483551560" updateReferences="true"/>&#x0A;<refactoring comment="자원 &apos;1_LED/Src/BSP/hw.c&apos;을(를) &apos;bsp.c&apos;(으)로 이름 바꾸기" description="&apos;hw.c&apos; 자원 이름 바꾸기" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/BSP/hw.c" name="bsp.c" stamp="1560483556332" updateReferences="true"/>
+</session>

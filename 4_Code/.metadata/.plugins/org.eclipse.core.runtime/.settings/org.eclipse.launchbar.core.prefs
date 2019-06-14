@@ -1,0 +1,6 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:103_REG,org.eclipse.launchbar.core.descriptorType.default\:103RB_5 Debug,org.eclipse.launchbar.core.descriptorType.default\:\uC0C8_\uAD6C\uC131
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:103RB.elf/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:103RB.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

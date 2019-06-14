@@ -1,0 +1,18 @@
+#include "My103.h"
+#include "stm32f103xb.h"
+
+
+int main(void){
+	ledInit();
+
+	do{
+		Delay_ms(1000);
+		ledOn(0);
+		Delay_ms(1000);
+		ledOff(0);
+
+
+    }while(1);
+}
+
+//RCC_Config();

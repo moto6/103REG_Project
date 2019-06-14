@@ -1,0 +1,23 @@
+#include "My103.h"
+#include "stm32f103xb.h"
+
+
+int main(void){
+	RCC_Config();
+	ledInit();
+	uint32_t i=0;
+	while(1){
+//		for(i=0;i<4;i++) {
+//			Delay_ms(100);
+//			ledToggle(i);
+//		}
+//		for(i=0;i<4;i++) {
+//			Delay_ms(100);
+//			ledOff(i);
+//		}
+
+	  ledToggle(btn_pol());
+    Delay_ms(100);
+
+	}
+}

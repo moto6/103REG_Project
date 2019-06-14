@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="자원 &apos;103_REG/Src/mapi&apos;을(를) &apos;BSP&apos;(으)로 이름 바꾸기" description="&apos;mapi&apos; 자원 이름 바꾸기" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/mapi" name="BSP" stamp="1560483233488" updateReferences="true"/>
+</session>

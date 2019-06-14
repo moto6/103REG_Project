@@ -1,0 +1,20 @@
+#include "My103.h"
+#include "stm32f103xb.h"
+
+
+int main(void){
+
+	RCC_Config();
+	EXTI_Config();
+	//int i = 0;
+	ledInit();
+
+
+	while(1){
+		ledOn(0);
+		ledOff(0);
+
+
+    }
+}
+

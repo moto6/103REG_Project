@@ -1,0 +1,39 @@
+12:37:11 **** Incremental Build of configuration Debug for project 103_REG ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\BSP\hw.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103_REG\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103_REG\Src\Lib -IC:\workspace\103REG_Project\4_Code\103_REG\Src -IC:\workspace\103REG_Project\4_Code\103_REG\Src\common -IC:\workspace\103REG_Project\4_Code\103_REG\Src\common\core -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\BSP\hw.o 
+..\Src\BSP\hw.c: In function 'hwInit':
+..\Src\BSP\hw.c:17:3: warning: implicit declaration of function 'swtimerInit' [-Wimplicit-function-declaration]
+   swtimerInit();
+   ^~~~~~~~~~~
+..\Src\BSP\hw.c:18:3: warning: implicit declaration of function 'ledInit' [-Wimplicit-function-declaration]
+   ledInit();
+   ^~~~~~~
+..\Src\BSP\hw.c:19:3: warning: implicit declaration of function 'buttonInit' [-Wimplicit-function-declaration]
+   buttonInit();
+   ^~~~~~~~~~
+..\Src\BSP\hw.c:20:3: warning: implicit declaration of function 'uartInit' [-Wimplicit-function-declaration]
+   uartInit();
+   ^~~~~~~~
+..\Src\BSP\hw.c:21:3: warning: implicit declaration of function 'timerInit' [-Wimplicit-function-declaration]
+   timerInit();
+   ^~~~~~~~~
+..\Src\BSP\hw.c:22:3: warning: implicit declaration of function 'flashInit' [-Wimplicit-function-declaration]
+   flashInit();
+   ^~~~~~~~~
+..\Src\BSP\hw.c:23:3: warning: implicit declaration of function 'eepromInit' [-Wimplicit-function-declaration]
+   eepromInit();
+   ^~~~~~~~~~
+arm-atollic-eabi-gcc -o 103_REG.elf Src\BSP\Legucy\My103.o Src\BSP\core\button.o Src\BSP\core\config.o Src\BSP\core\eeprom.o Src\BSP\core\flash.o Src\BSP\core\led.o Src\BSP\core\swtimer.o Src\BSP\core\timer.o Src\BSP\core\uart.o Src\BSP\hw.o Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\common\core\qbuffer.o Src\main.o -mthumb -mcpu=cortex-m3 -T../Src/Lib/STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103_REG.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103_REG.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+    756	     12	   1564	   2332	    91c	103_REG.elf
+Print size information done
+Generate listing file
+Output sent to: 103_REG.list
+Generate listing file done
+Generate build reports done
+
+12:37:12 Build Finished (took 550ms)
+

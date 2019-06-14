@@ -1,0 +1,17 @@
+#include "My103.h"
+#include "stm32f103xb.h"
+
+
+int main(void){
+
+	RCC_Config();
+	EXTI_Config();
+	int i = 0;
+
+
+	while(1){
+
+
+    }
+}
+

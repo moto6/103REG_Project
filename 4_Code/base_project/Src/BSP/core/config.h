@@ -1,0 +1,9 @@
+#ifndef SRC_HW_CORE_CONFIG_H_
+#define SRC_HW_CORE_CONFIG_H_
+
+
+#define STM32F103C8T6
+
+
+
+#endif //SRC_HW_CORE_CONFIG_H_

@@ -1,0 +1,24 @@
+14:07:54 **** Incremental Build of configuration Debug for project 1_LED ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\BSP\core\led.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\1_LED\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\1_LED\Src\Lib -IC:\workspace\103REG_Project\4_Code\1_LED\Src -IC:\workspace\103REG_Project\4_Code\1_LED\Src\common -IC:\workspace\103REG_Project\4_Code\1_LED\Src\common\core -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\BSP\core\led.o 
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\1_LED\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\1_LED\Src\Lib -IC:\workspace\103REG_Project\4_Code\1_LED\Src -IC:\workspace\103REG_Project\4_Code\1_LED\Src\common -IC:\workspace\103REG_Project\4_Code\1_LED\Src\common\core -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+In file included from ..\Src\BSP\bsp.h:26:0,
+                 from ..\Src\main.c:1:
+C:\workspace\103REG_Project\4_Code\1_LED\Src\Lib/stm32f103xb.h:712:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+ #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+                               ^
+..\Src\main.c:7:1: note: in expansion of macro 'GPIOA'
+ GPIOA-> &= ~(0x2<<0|0x2<<4|0x2<<8|0x2<<12);
+ ^~~~~
+C:\workspace\103REG_Project\4_Code\1_LED\Src\Lib/stm32f103xb.h:649:31: error: expected ')' before '(' token
+ #define GPIOA_BASE            (APB2PERIPH_BASE + 0x00000800U)
+                               ^
+C:\workspace\103REG_Project\4_Code\1_LED\Src\Lib/stm32f103xb.h:712:46: note: in expansion of macro 'GPIOA_BASE'
+ #define GPIOA               ((GPIO_TypeDef *)GPIOA_BASE)
+                                              ^~~~~~~~~~
+..\Src\main.c:7:1: note: in expansion of macro 'GPIOA'
+ GPIOA-> &= ~(0x2<<0|0x2<<4|0x2<<8|0x2<<12);
+ ^~~~~
+
+14:07:54 Build Finished (took 344ms)
+

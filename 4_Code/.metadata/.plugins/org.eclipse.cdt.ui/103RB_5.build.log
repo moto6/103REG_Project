@@ -1,0 +1,17 @@
+15:13:56 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3676	    112	   1580	   5368	   14f8	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+
+15:13:56 Build Finished (took 625ms)
+

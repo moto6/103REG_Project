@@ -1,0 +1,1176 @@
+14:21:35 **** Rebuild of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -g -Wa,--warn -x assembler-with-cpp -specs=nano.specs -o Src\Lib\Startup\startup_stm32f103xb.o ..\Src\Lib\Startup\startup_stm32f103xb.s 
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -c ..\Src\Lib\system_stm32f1xx.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\Lib\system_stm32f1xx.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3692	    112	   1580	   5384	   1508	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:22:14 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3696	    112	   1580	   5388	   150c	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:22:27 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3692	    112	   1580	   5384	   1508	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:22:48 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3680	    112	   1580	   5372	   14fc	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:23:17 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3680	    112	   1580	   5372	   14fc	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+14:23:21 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3688	    112	   1580	   5380	   1504	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:24:08 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3680	    112	   1580	   5372	   14fc	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:27:38 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3680	    112	   1580	   5372	   14fc	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:29:01 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3680	    112	   1580	   5372	   14fc	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:29:27 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3680	    112	   1580	   5372	   14fc	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+14:29:40 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3680	    112	   1580	   5372	   14fc	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:29:57 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3676	    112	   1580	   5368	   14f8	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:30:20 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3676	    112	   1580	   5368	   14f8	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:30:36 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3676	    112	   1580	   5368	   14f8	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:30:59 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3672	    112	   1580	   5364	   14f4	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:31:18 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3676	    112	   1580	   5368	   14f8	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:33:52 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+..\Src\main.c: In function 'main':
+..\Src\main.c:10:15: error: lvalue required as increment operand
+   for(i=0;i<4i++) {
+               ^~
+..\Src\main.c:10:17: error: expected ';' before ')' token
+   for(i=0;i<4i++) {
+                 ^
+14:33:57 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3688	    112	   1580	   5380	   1504	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+14:35:08 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+..\Src\My103.c: In function 'ledOff':
+..\Src\My103.c:18:28: error: expected ';' before 'ch'
+  GPIOA->ODR &= (~(0xf<<ch))ch;
+                            ^~
+14:35:10 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3708	    112	   1580	   5400	   1518	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:35:31 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3708	    112	   1580	   5400	   1518	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:39:17 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3700	    112	   1580	   5392	   1510	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:39:53 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3688	    112	   1580	   5380	   1504	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:40:11 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3672	    112	   1580	   5364	   14f4	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:40:33 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3668	    112	   1580	   5360	   14f0	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:45:22 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3692	    112	   1580	   5384	   1508	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:46:06 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3720	    112	   1580	   5412	   1524	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:48:51 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3708	    112	   1580	   5400	   1518	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:49:09 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3680	    112	   1580	   5372	   14fc	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:49:57 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3700	    112	   1580	   5392	   1510	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:50:12 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3696	    112	   1580	   5388	   150c	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:52:03 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3708	    112	   1580	   5400	   1518	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:53:51 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3708	    112	   1580	   5400	   1518	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+14:54:56 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3708	    112	   1580	   5400	   1518	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+15:10:25 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3708	    112	   1580	   5400	   1518	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+15:10:59 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3700	    112	   1580	   5392	   1510	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+15:11:30 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3688	    112	   1580	   5380	   1504	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+15:11:59 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3680	    112	   1580	   5372	   14fc	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+15:12:02 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3684	    112	   1580	   5376	   1500	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+15:12:28 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3680	    112	   1580	   5372	   14fc	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+15:12:58 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3676	    112	   1580	   5368	   14f8	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 103RB_5
+15:13:56 **** Incremental Build of configuration Debug for project 103RB_5 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\103RB_5\Src\Lib -IC:\workspace\103REG_Project\4_Code\103RB_5\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 103RB_5.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=103RB_5.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 103RB_5.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3676	    112	   1580	   5368	   14f8	103RB_5.elf
+Print size information done
+Generate listing file
+Output sent to: 103RB_5.list
+Generate listing file done
+Generate build reports done
+15:25:36 **** Rebuild of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -c ..\Src\Lib\system_stm32f1xx.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\Lib\system_stm32f1xx.o 
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+..\Src\My103.c: In function 'ledToggle':
+..\Src\My103.c:37:3: error: expected ';' before '}' token
+   }
+   ^
+..\Src\My103.c:40:3: error: expected ';' before '}' token
+   }
+   ^
+15:25:52 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -g -Wa,--warn -x assembler-with-cpp -specs=nano.specs -o Src\Lib\Startup\startup_stm32f103xb.o ..\Src\Lib\Startup\startup_stm32f103xb.s 
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3708	    112	   1580	   5400	   1518	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+Info: Nothing to build for 2_SW
+15:26:22 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3708	    112	   1580	   5400	   1518	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:26:44 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3708	    112	   1580	   5400	   1518	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:30:08 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+..\Src\My103.c: In function 'btn_Init':
+..\Src\My103.c:49:1: error: expected ';' before '}' token
+ }
+ ^
+..\Src\My103.c: In function 'btn_pol':
+..\Src\My103.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+15:30:19 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+..\Src\My103.c: In function 'btn_pol':
+..\Src\My103.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3716	    112	   1580	   5408	   1520	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:32:06 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+..\Src\My103.c: In function 'btn_Init':
+..\Src\My103.c:49:1: error: expected ';' before '}' token
+ }
+ ^
+..\Src\My103.c: In function 'btn_pol':
+..\Src\My103.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+15:33:46 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+..\Src\My103.c: In function 'btn_pol':
+..\Src\My103.c:53:14: warning: value computed is not used [-Wunused-value]
+   GPIOA->IDR & (uint16_t)(0xf<<4)
+               
+..\Src\My103.c:54:1: error: expected ';' before '}' token
+ }
+ ^
+..\Src\My103.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+15:33:48 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+..\Src\My103.c: In function 'btn_pol':
+..\Src\My103.c:53:14: warning: value computed is not used [-Wunused-value]
+   GPIOA->IDR & (uint16_t)(0xf<<4);
+               
+..\Src\My103.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3744	    112	   1580	   5436	   153c	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+15:37:15 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+..\Src\My103.c: In function 'btn_pol':
+..\Src\My103.c:55:3: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'btnbuf'
+   btnbuf = GPIOA->IDR & (uint16_t)(0xf<<4);
+   ^~~~~~
+15:37:38 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+..\Src\main.c: In function 'main':
+..\Src\main.c:8:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i=0;
+           ^
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+..\Src\My103.c: In function 'btn_pol':
+..\Src\My103.c:55:3: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'btnbuf'
+   btnbuf = GPIOA->IDR & (uint16_t)(0xf<<4);
+   ^~~~~~
+15:37:46 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+..\Src\My103.c: In function 'btn_pol':
+..\Src\My103.c:54:12: warning: unused variable 'table' [-Wunused-variable]
+   uint16_t table[4];
+            ^~~~~
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3716	    112	   1580	   5408	   1520	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:38:06 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+..\Src\main.c: In function 'main':
+..\Src\main.c:8:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i=0;
+           ^
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3720	    112	   1580	   5412	   1524	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:39:57 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+..\Src\My103.c: In function 'btn_pol':
+..\Src\My103.c:54:12: warning: unused variable 'table' [-Wunused-variable]
+   uint16_t table[4];
+            ^~~~~
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3720	    112	   1580	   5412	   1524	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:40:59 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+..\Src\My103.c: In function 'btn_pol':
+..\Src\My103.c:54:12: warning: unused variable 'table' [-Wunused-variable]
+   uint16_t table[4];
+            ^~~~~
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3724	    112	   1580	   5416	   1528	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:42:06 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+..\Src\My103.c: In function 'btn_pol':
+..\Src\My103.c:55:12: warning: unused variable 'table' [-Wunused-variable]
+   uint16_t table[4];
+            ^~~~~
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3736	    112	   1580	   5428	   1534	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:42:56 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+..\Src\My103.c: In function 'btn_pol':
+..\Src\My103.c:56:12: warning: unused variable 'table' [-Wunused-variable]
+   uint16_t table[4];
+            ^~~~~
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3748	    112	   1580	   5440	   1540	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:45:10 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+..\Src\My103.c: In function 'btn_pol':
+..\Src\My103.c:60:12: warning: unused variable 'table' [-Wunused-variable]
+   uint16_t table[4];
+            ^~~~~
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3760	    112	   1580	   5452	   154c	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+15:46:08 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+..\Src\main.c: In function 'main':
+..\Src\main.c:8:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i=0;
+           ^
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3772	    112	   1580	   5464	   1558	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:51:01 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3812	    112	   1580	   5504	   1580	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:51:46 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3812	    112	   1580	   5504	   1580	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:52:18 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3820	    112	   1580	   5512	   1588	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:53:34 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3808	    112	   1580	   5500	   157c	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:54:02 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3808	    112	   1580	   5500	   157c	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:54:32 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3812	    112	   1580	   5504	   1580	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:54:53 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+..\Src\main.c: In function 'main':
+..\Src\main.c:8:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i=0;
+           ^
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3812	    112	   1580	   5504	   1580	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:56:14 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3828	    112	   1580	   5520	   1590	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+15:56:33 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+..\Src\main.c: In function 'main':
+..\Src\main.c:21:4: error: unknown type name 'ledOffall'
+    ledOffall
+    ^~~~~~~~~
+..\Src\main.c:22:14: error: expected declaration specifiers or '...' before numeric constant
+     Delay_ms(100);
+              ^~~
+..\Src\main.c:8:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i=0;
+           ^
+15:56:40 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+..\Src\main.c: In function 'main':
+..\Src\main.c:21:4: warning: implicit declaration of function 'ledOffall' [-Wimplicit-function-declaration]
+    ledOffall();
+    ^~~~~~~~~
+..\Src\main.c:8:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i=0;
+           ^
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3832	    112	   1580	   5524	   1594	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+15:57:03 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+..\Src\main.c: In function 'main':
+..\Src\main.c:8:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i=0;
+           ^
+arm-atollic-eabi-gcc -c ..\Src\My103.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\My103.o 
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3832	    112	   1580	   5524	   1594	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:57:32 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+..\Src\main.c: In function 'main':
+..\Src\main.c:8:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i=0;
+           ^
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3832	    112	   1580	   5524	   1594	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:57:49 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+..\Src\main.c: In function 'main':
+..\Src\main.c:8:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i=0;
+           ^
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3832	    112	   1580	   5524	   1594	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
+15:58:12 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+..\Src\main.c: In function 'main':
+..\Src\main.c:8:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i=0;
+           ^
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3832	    112	   1580	   5524	   1594	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+15:58:40 **** Incremental Build of configuration Debug for project 2_SW ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Src\main.c -mthumb -mcpu=cortex-m3 -std=gnu11 -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib\CMSIS -IC:\workspace\103REG_Project\4_Code\2_SW\Src\Lib -IC:\workspace\103REG_Project\4_Code\2_SW\Src -Og -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o 
+..\Src\main.c: In function 'main':
+..\Src\main.c:8:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i=0;
+           ^
+arm-atollic-eabi-gcc -o 2_SW.elf Src\Lib\Startup\startup_stm32f103xb.o Src\Lib\system_stm32f1xx.o Src\My103.o Src\main.o -mthumb -mcpu=cortex-m3 -T../STM32F103XB_FLASH.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=2_SW.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list 2_SW.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3832	    112	   1580	   5524	   1594	2_SW.elf
+Print size information done
+Generate listing file
+Output sent to: 2_SW.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for 2_SW
